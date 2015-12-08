@@ -2,13 +2,16 @@
 <html lang='en'>
 <head>
 	<title>Include Me Project</title>
+	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/design.css">
-	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="css/horizon-swiper.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/horizon-theme.min.css" />
 	
-
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	// Add the slick-theme.css if you want default styling
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="css/testimonial/style.css">
+	<link rel="stylesheet" href="css/design.css">
+	
 	<style>
 	/* Fixed header and footer.
 	* --------------------------------------- */
@@ -18,22 +21,59 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-	<script type="text/javascript" src="js/horizon-swiper.min.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+	<script type="text/javascript" src="js/testimonial/modernizr.js"></script>
+	<script type="text/javascript" src="js/testimonial/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/testimonial/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="js/testimonial/main.js"></script>
 
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('.container').fullpage({
-				anchors: ['1st', '2nd', '3rd', '4th'],
-				/*sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],*/
+				anchors: ['firstPage', 'secondPage', '3rdPage'],
+				// sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C', '#000000'],
 				navigation: true,
 				navigationPosition: 'right',
-				navigationTooltips: ['Home', 'About Us', 'Why Use Us?', 'Tools']
+				navigationTooltips: ['Home', 'About', 'Third and last page']
 				//css3: true
 			});
+			$('.responsive').slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
 		});
 	</script>
-
-
 </head>
 <!-- //////////////////////////////////// MAIN BODY -->
 <body>
@@ -52,19 +92,19 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li>
                                 <a href="#" id="circle-nav"><img src=
-                                "images/IconLinks.png"></a>
+                                "images/Question-Mark2.png"></a>
                             </li>
                             <li>
                                 <a href="#" id="circle-nav"><img src=
-                                "images/IconFAQ.png"></a>
+                                "images/Question-Mark2.png"></a>
                             </li>
                             <li>
                                 <a href="#" id="circle-nav"><img src=
-                                "images/IconContact.png"></a>
+                                "images/Question-Mark2.png"></a>
                             </li>
                             <li>
-                                <a href="#" id="login-button"><img src=
-                                "images/LoginBtn.png">
+                                <a href="#" id="Login">
+                                Login
                             	</a>
                             </li>
                         </ul>
@@ -76,6 +116,57 @@
 	<!-- //////////////////////////////////// NAVBAR -->
 	<div class="container">
 		<div id="fullpage">
+			<!-- //////////////////////////////////// PICTURE: SECTION 1 -->
+			<!--  <section class="section" id="first-page">
+                <div class="row">
+                    <div class="col-md-12 no-padding">
+                        <div class="carousel slide" data-ride="carousel"
+                        id="carousel-example-generic">
+                             Indicators -->
+                            <!-- <ol class="carousel-indicators">
+                                <li class="active" data-slide-to="0"
+                                data-target="#carousel-example-generic">
+                                </li>
+                                <li data-slide-to="1" data-target=
+                                "#carousel-example-generic"></li>
+                                <li data-slide-to="2" data-target=
+                                "#carousel-example-generic"></li> -->
+                           <!--  </ol> --><!-- Wrapper for slides -->
+                           <!--  <div class="carousel-inner">
+                                <div class="item active">
+                                    <img alt="..." src=
+                                    "http://placehold.it/1200x315">
+                                    <div class="carousel-caption">
+                                        <h3>Caption Text</h3>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img alt="..." src=
+                                    "http://placehold.it/1200x315">
+                                    <div class="carousel-caption">
+                                        <h3>Caption Text</h3>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img alt="..." src=
+                                    "http://placehold.it/1200x315">
+                                    <div class="carousel-caption">
+                                        <h3>Caption Text</h3>
+                                    </div>
+                                </div> -->
+                           <!--  </div>< -->!-- Controls -->
+                            <!--  <a class="left carousel-control" data-slide=
+                            "prev" href="#carousel-example-generic" role=
+                            "button"><span class=
+                            "glyphicon glyphicon-chevron-left"></span></a>
+                            <a class="right carousel-control" data-slide=
+                            "next" href="#carousel-example-generic" role=
+                            "button"><span class=
+                            "glyphicon glyphicon-chevron-right"></span></a>
+                        </div> --><!-- Carousel -->
+                   <!--  </div>
+                </div>
+             </section> --> 
 			<!-- //////////////////////////////////// ABOUT PAGE -->
 			<section id="second-page" class="section">
 				<div class="row">					
@@ -117,92 +208,154 @@
 					<div class="col-md-1"></div>
 				</div>
 			</section>
-
-
 			<!-- //////////////////////////////////// TOOLS PAGE -->
-		<section id="fourth-page" class="section">
-			<div class="row">
-				<div class="col-md-12">
-					<!-- <div class="row" id="tools-row">
-					<h3>Breakdown of Tools</h3>		
-						<div class="col-md-4">
-						<img src="images/ToolsIcons/decisions.png">
+			<section id="fourth-page" class="section">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 tools-padding">
+						<div class="responsive">
+						  	<div>
+						  		<h3>Doodle <br>Goals</h3>
+						  		<img class="toolsIcons" src="images/ToolsIcons/doodle_goals.png">
+						  		<div class="tool-text">
+						  			An interactive space to create and monitor goals in a fun and personalised way.
+						  		</div>
+						  	</div>
+						  	<div>
+						  		<h3>Feelings <br>Finder</h3>
+						  		<img class="toolsIcons" src="images/ToolsIcons/feelings_finder.png">
+						  		<div class="tool-text">
+						  			A space to identify, label and learn the meaning of different feelings.
+						  		</div>
+						  	</div>
+						 	<div>
+						  		<h3>My <br>Decisions</h3>
+						  		<img class="toolsIcons" src="images/ToolsIcons/decisions.png">
+						  		<div class="tool-text">
+						  			Develop effective decision making skills.<br><br>
+						  		</div>
+						  	</div>
+						  	<div>
+						  		<h3>Doodle <br>Draw</h3>
+						  		<img class="toolsIcons" src="images/ToolsIcons/feelings_finder.png">
+						  		<div class="tool-text">
+						  			A creative drawing tool to aid the expression of thoughts, feelings and difficulties.
+						  		</div>
+						  	</div>
+						  	<div>
+						  		<h3>Getting To<br> Know</h3>
+						  		<img class="toolsIcons" src="images/ToolsIcons/getting_to_know.png">
+						  		<div class="tool-text">
+						  			To encourage conversations around relationships, interests and hobbies.
+						  		</div>
+						  	</div>
+						 	<div>
+						  		<h3>My <br>Library</h3>
+						  		<img class="toolsIcons" src="images/ToolsIcons/library.png">
+						  		<div class="tool-text">
+						  			A library of online resources and sites. Designed to promote self-management.
+						  		</div>
+						  	</div>
+						  	<div>
+						  		<h3>My <br>Measures</h3>
+						  		<img class="toolsIcons" src="images/ToolsIcons/measures.png">
+						  		<div class="tool-text">
+						  			A collaborative tool to access, complete and review measures.
+						  		</div>
+						  	</div>
+						  	<div>
+						  		<h3>My <br>Plans</h3>
+						  		<img class="toolsIcons" src="images/ToolsIcons/plans.png">
+						  		<div class="tool-text">
+						  			Encourages young people and those supporting them to create & review general plans.
+						  		</div>
+						  	</div>
+						 	<div>
+						  		<h3>My <br>Sessions </h3>
+						  		<img class="toolsIcons" src="images/ToolsIcons/sessions.png">
+						  		<div class="tool-text">
+						  			Key information is recorded, encouraging collaborative reflection.
+						  		</div>
+						  	</div>
+						  	<div>
+						  		<h3>My <br>Relationships </h3>
+						  		<img class="toolsIcons" src="images/ToolsIcons/shared_agreement.png">
+						  		<div class="tool-text">
+						  			Clarifies the support being offered.<br><br>
+						  		</div>
+						  	</div>
+						  	<div>
+						  		<h3>My <br>Strengths</h3>
+						  		<img class="toolsIcons" src="images/ToolsIcons/strengths.png">
+						  		<div class="tool-text">
+						  			Encourages reflection on positive characteristics and the development of key strengths.
+						  		</div>
+						  	</div>
+						  	<div>
+						  		<h3>My <br>Supporters</h3>
+						  		<img class="toolsIcons" src="images/ToolsIcons/supporters.png">
+						  		<div class="tool-text">
+						  			-----?-------?-----?<br><br>
+						  		</div>
+						  	</div>
 						</div>
-						<div class="col-md-4">
-						<img src="images/ToolsIcons/doodle_draw.png">
-						</div>
-						<div class="col-md-4">
-						<img src="images/ToolsIcons/doodle_goals.png">
-						</div>
-					</div>
-					<hr>
-					<div class="row" id="tools-row">
-						<div class="col-md-4">
-						<img src="images/ToolsIcons/feelings_finder.png">
-						</div>
-						<div class="col-md-4">
-						<img src="images/ToolsIcons/getting_to_know.png">
-						</div>
-						<div class="col-md-4">
-						<img src="images/ToolsIcons/library.png">
-						</div>
-					</div>
-					<hr>
-					<div class="row" id="tools-row">
-						<div class="col-md-4">
-						<img src="images/ToolsIcons/measures.png">
-						</div>
-						<div class="col-md-4">
-						<img src="images/ToolsIcons/plans.png">
-						</div>
-						<div class="col-md-4">
-						<img src="images/ToolsIcons/sessions.png">
-						</div>
-					</div> -->
-					<div class="horizon-swiper">
-  						<div class="horizon-item"><img src="images/ToolsIcons/decisions.png"><p>Hello<br>
-  						Hello<br>
-  						Hello<br>
-  						Hello<br>
-  						Hello<br></p></div>
-					 	<div class="horizon-item"><div class="testing-img"><img src="images/ToolsIcons/doodle_draw.png"></div></div>
-					  	<div class="horizon-item"><img src="images/ToolsIcons/doodle_goals.png"></div>
-					  	<div class="horizon-item"><img src="images/ToolsIcons/feelings_finder.png"></div>
-					 	<div class="horizon-item"><img src="images/ToolsIcons/getting_to_know.png"></div>
-					  	<div class="horizon-item"><img src="images/ToolsIcons/library.png"></div>
-					  	<div class="horizon-item"><img src="images/ToolsIcons/measures.png"></div>
-					 	<div class="horizon-item"><img src="images/ToolsIcons/plans.png"></div>
-					  	<div class="horizon-item"><img src="images/ToolsIcons/sessions.png"></div>
-					  	<div class="horizon-item"><img src="images/ToolsIcons/measures.png"></div>
-					 	<div class="horizon-item"><img src="images/ToolsIcons/plans.png"></div>
-					  	<div class="horizon-item"><img src="images/ToolsIcons/sessions.png"></div>
 					</div>
 				</div>
-			</div>
-		</section>	
-
-		<!-- Fullpage end div here below -->
-		</div>
-
-
+			</section>
 			<!-- //////////////////////////////////// TESTIMONIALS PAGE -->
-			<div class="row">
-				<div class="col-md-1">
+			<section id="fifth-page" class="section" style="position: relative;">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="cd-testimonials-wrapper cd-container">
+							<ul class="cd-testimonials">
+								<li>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<div class="cd-author">
+										<img src="img/avatar-1.jpg" alt="Author image">
+										<ul class="cd-author-info">
+											<li>MyName</li>
+											<li>CEO, AmberCreative</li>
+										</ul>
+									</div>
+								</li>
+						 
+								<li><!-- ... --></li>
+						 
+								<li><!-- ... --></li>
+							</ul> <!-- cd-testimonials -->
+						 
+							<a href="#0" class="cd-see-all">See all</a>
+						</div> <!-- cd-testimonials-wrapper -->
+						<div class="cd-testimonials-all">
+							<div class="cd-testimonials-all-wrapper">
+								<ul>
+									<li class="cd-testimonials-item">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit totam saepe iste maiores neque animi molestias nihil illum nisi temporibus.</p>
+										
+										<div class="cd-author">
+											<img src="img/avatar-1.jpg" alt="Author image">
+											<ul class="cd-author-info">
+												<li>MyName</li>
+												<li>CEO, CompanyName</li>
+											</ul>
+										</div> <!-- cd-author -->
+									</li>
+						 
+									<li class="cd-testimonials-item"><!-- ... --></li>
+								</ul>
+							</div>	<!-- cd-testimonials-all-wrapper -->
+						 
+							<a href="#0" class="close-btn">Close</a>
+						</div> <!-- cd-testimonials-all -->
+					</div>
 				</div>
-				<div class="col-md-11">
-				</div>
+			</section>
 			</div>
-
-
+		<!-- Fullpage end div here below -->
 			<!-- //////////////////////////////////// FOOTER SECTION -->
 			<div class="row">
 				<div class="col-md-12">
 				</div>
 			</div>
 		</div>
-			<script type="text/javascript">
-		$('.horizon-swiper').horizonSwiper();
-	</script>
-
 	</body>
 	</html>
