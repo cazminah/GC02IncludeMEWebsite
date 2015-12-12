@@ -167,12 +167,14 @@ div#myNavbar.navbar-collapse.collapse {
 	background-image: url("../images/ocean.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
+
 }
 #third-page {
 	background-image: url("../images/mountain.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 #third-page header{
 	text-align: justify;
@@ -212,7 +214,7 @@ div#myNavbar.navbar-collapse.collapse {
 		margin: auto;
 	}
 
-
+/* //////////////////// full page jquery /////////////////////////// */
 #header, #footer{
 		position:fixed;
 		height: 50px;
@@ -230,7 +232,7 @@ div#myNavbar.navbar-collapse.collapse {
 	#footer{
 		bottom:0px;
 	}
-
+/* //////////////////// end of full page jquery /////////////////////////// */
 	.container{
 		margin-top: 50px;
 	}
@@ -251,4 +253,33 @@ div#myNavbar.navbar-collapse.collapse {
 #fourth-page .tool-text{
 	text-align: center;
 	margin: 5px;
+}
+/* ////////////////////////////////////  FAQ page ///////////////////////////// */
+.young .btn {
+	margin-top: 50px;
+}
+.faqItem {
+	cursor: pointer; 
+}
+.faqDiv {
+	display: none;
+	margin-bottom: 15px;
+	background-color: #6666ff;
+	border-radius: 3px;
+}
+.young h2{
+	font-family: serif;
+	margin-top: 45px;
+	font-size: 1.5em;
+	color: #05a1c1;
+}
+.young .faqList {
+	list-style: none;
+}
+.young .questions {
+	padding: 5px;
+}
+
+.faqItem {
+	font-family: serif;
 }
