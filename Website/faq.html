@@ -5,6 +5,7 @@
 	<meta charset='utf-8'>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/design.css">
+	<link rel="stylesheet" href="css/faq.css">
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -41,12 +42,19 @@
             </div>
         </div>
 	 </div> 
-	 <div class="container">
-	 	<div class="row">
-	 		<div class="col-sm-7 col-sm-offset-2">
-			 	<section class="young">	
+     <div class="container">
+	  	<div class="row">
+	 		<div class="col-sm-8 col-sm-offset-2">
+	 			<div id="tabs-container">
+	 			 <ul class="tabs-menu">
+			        <li class="current"><a href="#tab-1">Children</a></li>
+			        <li><a href="#tab-2">Clinicians</a></li>
+			        <li><a href="#tab-3">Parents</a></li>
+    			</ul>
+			 	<section class="young tab">
+			 		<div id="tab-1" class="tab-content">
 			 		<h2>IncludeME General FAQ’s for Children and Young people</h2>		
-					<ul class="faqList">
+					<ul class="faqList"> 
 						<li>
 							<span class="faqItem">What is includeME?</span>
 							<div class="faqDiv">
@@ -154,19 +162,11 @@
 
 							</div>
 						</li>
-					</ul>
+					 </ul>
+					</div>
 			 	</section>
-		 	</div>
-	 	</div>
- 		<div class="row">
- 			<div class="col-sm-7 col-sm-offset-2">
- 				<section class="clinitian">
- 				</section>
- 			</div>
- 		</div>
-	 	<div class="row">
- 			<div class="col-sm-7 col-sm-offset-2">
- 				<section class="clinitian">
+ 				<section class="clinitian tab">
+ 					<div id="tab-2" class="tab-content">
  					<h2>IncludeME FAQs (for clinicians)</h2>
  					<ul class="faqList">
  						<li>
@@ -259,8 +259,15 @@
 		 					</div>
 	 					</li>
 	 				</ul>
+	 			</div>
+ 				</section>
+
+ 				<section class="Parents tab">
+ 					<div id="tab-3" class="tab-content">
+ 					</div>
  				</section>
  			</div>
+ 			</div>
  		</div>
-	 </div>
+	 </div> 
 </body>

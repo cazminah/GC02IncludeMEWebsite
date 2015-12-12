@@ -255,9 +255,6 @@ div#myNavbar.navbar-collapse.collapse {
 	margin: 5px;
 }
 /* ////////////////////////////////////  FAQ page ///////////////////////////// */
-/*.young .btn {
-	margin-top: 50px;
-}*/
 .faqItem {
 	cursor: pointer; 
 }
@@ -282,9 +279,7 @@ div#myNavbar.navbar-collapse.collapse {
 .faqList {
 	list-style: none;
 }
-/*.young .questions {
-	padding: 5px;
-}*/
+
 
 .faqItem {
 	font-family: serif;
