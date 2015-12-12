@@ -255,9 +255,9 @@ div#myNavbar.navbar-collapse.collapse {
 	margin: 5px;
 }
 /* ////////////////////////////////////  FAQ page ///////////////////////////// */
-.young .btn {
+/*.young .btn {
 	margin-top: 50px;
-}
+}*/
 .faqItem {
 	cursor: pointer; 
 }
@@ -273,13 +273,31 @@ div#myNavbar.navbar-collapse.collapse {
 	font-size: 1.5em;
 	color: #05a1c1;
 }
-.young .faqList {
+.clinitian h2{
+	font-family: serif;
+	margin-top: 45px;
+	font-size: 1.5em;
+	color: #05a1c1;
+}
+.faqList {
 	list-style: none;
 }
-.young .questions {
+/*.young .questions {
 	padding: 5px;
-}
+}*/
 
 .faqItem {
 	font-family: serif;
 }
+/* ////////////////////////// menue hover text //////////////////////// */
+#wrapper #text {
+	visibility:hidden ;
+position:relative;
+bottom:30px;
+left:0px;
+
+}
+#wrapper:hover .text {
+visibility:visible;
+}
+

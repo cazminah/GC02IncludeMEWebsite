@@ -86,3 +86,4 @@ function fixSlickSlidersHeight(){
   //change the height of all elements to the slickSliderMaxHeight
   $(".slick-slide").css('height', slickSliderMaxHeight+'px');
 }
+
