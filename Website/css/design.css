@@ -264,7 +264,7 @@ div#myNavbar.navbar-collapse.collapse {
 	background-color: #6666ff;
 	border-radius: 3px;
 }
-.young h2{
+/*.young h2{
 	font-family: serif;
 	margin-top: 45px;
 	font-size: 1.5em;
@@ -274,7 +274,7 @@ div#myNavbar.navbar-collapse.collapse {
 	font-family: serif;
 	margin-top: 45px;
 	font-size: 1.5em;
-	color: #05a1c1;
+	color: #05a1c1;*/
 }
 .faqList {
 	list-style: none;
@@ -285,14 +285,8 @@ div#myNavbar.navbar-collapse.collapse {
 	font-family: serif;
 }
 /* ////////////////////////// menue hover text //////////////////////// */
-#wrapper #text {
-	visibility:hidden ;
-position:relative;
-bottom:30px;
-left:0px;
-
-}
-#wrapper:hover .text {
-visibility:visible;
+.Zebra_Tooltip .Zebra_Tooltip_Message {
+    font-size: 12px;
+    padding: 7px;
 }
 

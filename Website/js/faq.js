@@ -11,4 +11,10 @@ $(document).ready(function(){
         $(".tab-content").not(tab).css("display", "none");
         $(tab).fadeIn();
     });
+
+    new $.Zebra_Tooltips($('.tooltips'), {
+        'background_color': '#C40000',
+        'color': '#FFF',
+        'position': 'center'
+    });
 });

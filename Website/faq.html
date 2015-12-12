@@ -4,12 +4,14 @@
 	<title>FAQ</title>
 	<meta charset='utf-8'>
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/zebra_tooltips.css">
 	<link rel="stylesheet" href="css/design.css">
 	<link rel="stylesheet" href="css/faq.css">
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/faq.js"></script>
+	<script type="text/javascript" src="js/zebra_tooltips.js"></script>
 
 </head>
 
@@ -30,7 +32,7 @@
                         </div>
 						<div class="collapse navbar-collapse" id="myNavbar">
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="#" id="circle-nav"><img src="images/Question-Mark2.png"></a></li>
+								<li><a href="#" id="circle-nav" class="tooltips" title="Frequently Asked Questions"><img src="images/Question-Mark2.png"></a></li>
 								<li><a href="#" id="circle-nav"><img src="images/IconContact.png"></a></li>
 								<li><a href="#" id="circle-nav"><img src="images/IconLinks.png"></a></li>
 								<li><a href="https://camhsweb.silvercloudhealth.com/account/login/?next=/"><img 
@@ -46,227 +48,225 @@
 	  	<div class="row">
 	 		<div class="col-sm-8 col-sm-offset-2">
 	 			<div id="tabs-container">
-	 			 <ul class="tabs-menu">
-			        <li class="current"><a href="#tab-1">Children</a></li>
-			        <li><a href="#tab-2">Clinicians</a></li>
-			        <li><a href="#tab-3">Parents</a></li>
-    			</ul>
-			 	<section class="young tab">
-			 		<div id="tab-1" class="tab-content">
-			 		<h2>IncludeME General FAQ’s for Children and Young people</h2>		
-					<ul class="faqList"> 
-						<li>
-							<span class="faqItem">What is includeME?</span>
-							<div class="faqDiv">
-								IncludeME is an online platform, which has been designed to help and support the work you’re doing with your worker. The service you are working with has been selected as one of the first in the country to try out the very first version of the platform, which means it will continue to grow and improve all the time.
-								<br /><br />
-								IncludeME has tools on it to help you and your worker:
-								<ul>
-									<li>Review progress together</li>
-									<li>Keep track of what’s happening in sessions</li>
-									<li>Think together about what areas of your life you want to work on</li>
-									<li>Give feedback on how you’re working together</li>
-									<li>Think about what your strengths are and who’s close to you</li>
-								</ul>
-							</div>
-						</li>
-						<li>
-							<span class="faqItem">What tools are on the platform? </span>
-							<div class="faqDiv">
-								<ul>
-									<li>
-										<h3>My Sessions</h3>
-										<div>here you can record what has happened in your sessions, rate and review them.</div>
-									</li>
-									<li>
-										<h3>My Measures</h3>
-										<div>this tool allows you to complete your questionnaires on a tablet or computer. You can also see your answers and results to help you track your progress.</div>
-									</li>
-									<li>
-										<h3>My Relationships</h3>
-										<div>this is an interactive, visual map which you can plot your relationships allowing you to explore your support network.</div>
-									</li>
-									<li>
-										<h3>My Strengths</h3>
-										<div>this is a space for you to write down your strengths; helping you to reflect in a positive way.</div>
-									</li>
-									<li>
-										<h3>Doodle Draw</h3>
-										<div>this is a fun, creative drawing tool to help you to express your thoughts, feelings and difficulties.</div>
-									</li>
-									<li>
-										<h3>Feelings Explorer</h3>
-										<div>here you can record your feelings using drawings and writing.</div>
-									</li>
-									<li>
-										<h3>Doodle Goals</h3>
-										<div>here you can record your personal goals and whether you have met them, using a drawing tool.</div>
-									</li>
-									<li>
-										<h3>Shared Agreement</h3>
-										<div>here you can choose your treatment preferences. </div>
-									</li>
-									<li>
-										<h3>My Decisions</h3>
-										<div>this helpful decision tool supports you to make decisions by creating a pros and cons list and rating their importance.</div>
-									</li>
-									<li>
-										<h3>My Library</h3>
-										<div>this an online area with links and resources to give you lots of information that you might need.</div>
-									</li>
-									<li>
-										<h3>My Plans</h3>
-										<div>here you can record and review your plans.</div>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li>
-							<span class="faqItem">What is good about using IncludeME?</span>
-							<div class="faqDiv">
-								<ul>
-									<li>Gives you a fun way of expressing yourself, recording your plans and completing measures.</li>
-									<li>Helps you to work collaboratively with your worker and make decision together.</li>
-									<li>Gives you the confidence and empowers you to be involved in your care.</li>
-									<li>As a result, IncludeMe aims to improve your treatment experience.</li>
-								</ul>
-							</div>
-						</li>
-						<li>
-							<span class="faqItem">Do I have to use IncludeME?</span>
-							<div class="faqDiv">
-								No, at any point you can ask your worker to stop using includeME. If you change your mind at any time and decide you do want to give it a try, all you have to do is speak to your worker and they can sign you up.
+		 			<ul class="tabs-menu">
+				        <li class="current"><a href="#tab-1">Children</a></li>
+				        <li><a href="#tab-2">Clinicians</a></li>
+				        <li><a href="#tab-3">Parents</a></li>
+	    			</ul>
 
-							</div>
-						</li>
-						<li>
-							<span class="faqItem">What will happen to the data that I enter on IncludeME?</span>
-							<div class="faqDiv">
-								Anything entered as part of the outcome measures (questionnaires) will be treated in exactly the same way as the paper versions except it will be handled by secure servers (if you are unsure what these are, or how this information is used, please ask your worker),. Everything else will stay on the secure servers and will only be viewable by you and the person you’re working with, unless you discuss and agree with your worker to sharing the information elsewhere. 
+				 	<div class="tab">
+				 		<div id="tab-1" class="tab-content">
+					 		<h2>IncludeME General FAQ’s for Children and Young people</h2>		
+							<ul class="faqList"> 
+								<li>
+									<span class="faqItem">What is includeME?</span>
+									<div class="faqDiv">
+										IncludeME is an online platform, which has been designed to help and support the work you’re doing with your worker. The service you are working with has been selected as one of the first in the country to try out the very first version of the platform, which means it will continue to grow and improve all the time.
+										<br /><br />
+										IncludeME has tools on it to help you and your worker:
+										<ul>
+											<li>Review progress together</li>
+											<li>Keep track of what’s happening in sessions</li>
+											<li>Think together about what areas of your life you want to work on</li>
+											<li>Give feedback on how you’re working together</li>
+											<li>Think about what your strengths are and who’s close to you</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<span class="faqItem">What tools are on the platform? </span>
+									<div class="faqDiv">
+										<ul>
+											<li>
+												<h3>My Sessions</h3>
+												<div>here you can record what has happened in your sessions, rate and review them.</div>
+											</li>
+											<li>
+												<h3>My Measures</h3>
+												<div>this tool allows you to complete your questionnaires on a tablet or computer. You can also see your answers and results to help you track your progress.</div>
+											</li>
+											<li>
+												<h3>My Relationships</h3>
+												<div>this is an interactive, visual map which you can plot your relationships allowing you to explore your support network.</div>
+											</li>
+											<li>
+												<h3>My Strengths</h3>
+												<div>this is a space for you to write down your strengths; helping you to reflect in a positive way.</div>
+											</li>
+											<li>
+												<h3>Doodle Draw</h3>
+												<div>this is a fun, creative drawing tool to help you to express your thoughts, feelings and difficulties.</div>
+											</li>
+											<li>
+												<h3>Feelings Explorer</h3>
+												<div>here you can record your feelings using drawings and writing.</div>
+											</li>
+											<li>
+												<h3>Doodle Goals</h3>
+												<div>here you can record your personal goals and whether you have met them, using a drawing tool.</div>
+											</li>
+											<li>
+												<h3>Shared Agreement</h3>
+												<div>here you can choose your treatment preferences. </div>
+											</li>
+											<li>
+												<h3>My Decisions</h3>
+												<div>this helpful decision tool supports you to make decisions by creating a pros and cons list and rating their importance.</div>
+											</li>
+											<li>
+												<h3>My Library</h3>
+												<div>this an online area with links and resources to give you lots of information that you might need.</div>
+											</li>
+											<li>
+												<h3>My Plans</h3>
+												<div>here you can record and review your plans.</div>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<span class="faqItem">What is good about using IncludeME?</span>
+									<div class="faqDiv">
+										<ul>
+											<li>Gives you a fun way of expressing yourself, recording your plans and completing measures.</li>
+											<li>Helps you to work collaboratively with your worker and make decision together.</li>
+											<li>Gives you the confidence and empowers you to be involved in your care.</li>
+											<li>As a result, IncludeMe aims to improve your treatment experience.</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<span class="faqItem">Do I have to use IncludeME?</span>
+									<div class="faqDiv">
+										No, at any point you can ask your worker to stop using includeME. If you change your mind at any time and decide you do want to give it a try, all you have to do is speak to your worker and they can sign you up.
 
-							</div>
-						</li>
-						<li>
-							<span class="faqItem">Can my parents see what I do on IncludeME?</span>
-							<div class="faqDiv">
-								Your parents will only be able to see anything you’ve done on includeME if you and your worker agree to show them something.
-								<br /><br />
-								The only other time your parents might be told what you have put on includeME is if your worker is worried that you might be at risk (please talk to your worker if you are unsure when they may need to talk to others about what you’ve said).
+									</div>
+								</li>
+								<li>
+									<span class="faqItem">What will happen to the data that I enter on IncludeME?</span>
+									<div class="faqDiv">
+										Anything entered as part of the outcome measures (questionnaires) will be treated in exactly the same way as the paper versions except it will be handled by secure servers (if you are unsure what these are, or how this information is used, please ask your worker),. Everything else will stay on the secure servers and will only be viewable by you and the person you’re working with, unless you discuss and agree with your worker to sharing the information elsewhere. 
 
-							</div>
-						</li>
-						<li>
-							<span class="faqItem">How long will I use IncludeME for?</span>
-							<div class="faqDiv">
-								There is no limit to how long you can use includeME for, so you can continue to use it for as long as you and your clinician want to. 
+									</div>
+								</li>
+								<li>
+									<span class="faqItem">Can my parents see what I do on IncludeME?</span>
+									<div class="faqDiv">
+										Your parents will only be able to see anything you’ve done on includeME if you and your worker agree to show them something.
+										<br /><br />
+										The only other time your parents might be told what you have put on includeME is if your worker is worried that you might be at risk (please talk to your worker if you are unsure when they may need to talk to others about what you’ve said).
 
-							</div>
-						</li>
-					 </ul>
-					</div>
-			 	</section>
- 				<section class="clinitian tab">
- 					<div id="tab-2" class="tab-content">
- 					<h2>IncludeME FAQs (for clinicians)</h2>
- 					<ul class="faqList">
- 						<li>
-	 					<span class="faqItem">Security, Technicalities and Access</span>
-	 					<div class="faqDiv">
-		 					<ul>
-		 						<li>How is access to the IncludeME platform controlled?</li>
-		 						<li>Would the site I work in need Wifi access and who will make sure this is the case?</li>
-		 						<li>Will we need access to a particular web browser?</li>
-		 						<li>How secure is the data, what level of authentication and encryption does IncludeME use and where is the data stored?</li>
-		 						<li>Should I access the platform on a desktop, laptop or a tablet?</li>
-		 						<li>What do I do if there is a technical issue? Who do I contact?</li>
-		 						<li>Will we need to get consent from parents for their child to be given access?</li>
-		 						<li>Who gives access to the platform and sets permissions, is this task completed by the provider or done locally?</li>
-		 						<li>When creating a log for a young person are you creating an anonymous ID or will it be their name? </li>
-		 						<li>What front end reports are available to us?</li>
-		 					</ul>
+									</div>
+								</li>
+								<li>
+									<span class="faqItem">How long will I use IncludeME for?</span>
+									<div class="faqDiv">
+										There is no limit to how long you can use includeME for, so you can continue to use it for as long as you and your clinician want to. 
+
+									</div>
+								</li>
+							</ul>
+						</div>
+
+	 					<div id="tab-2" class="tab-content">
+		 					<h2>IncludeME FAQs (for clinicians)</h2>
+		 					<ul class="faqList">
+		 						<li>
+			 					<span class="faqItem">Security, Technicalities and Access</span>
+			 					<div class="faqDiv">
+				 					<ul>
+				 						<li>How is access to the IncludeME platform controlled?</li>
+				 						<li>Would the site I work in need Wifi access and who will make sure this is the case?</li>
+				 						<li>Will we need access to a particular web browser?</li>
+				 						<li>How secure is the data, what level of authentication and encryption does IncludeME use and where is the data stored?</li>
+				 						<li>Should I access the platform on a desktop, laptop or a tablet?</li>
+				 						<li>What do I do if there is a technical issue? Who do I contact?</li>
+				 						<li>Will we need to get consent from parents for their child to be given access?</li>
+				 						<li>Who gives access to the platform and sets permissions, is this task completed by the provider or done locally?</li>
+				 						<li>When creating a log for a young person are you creating an anonymous ID or will it be their name? </li>
+				 						<li>What front end reports are available to us?</li>
+				 					</ul>
+			 					</div>
+			 					</li>
+			 					<li>
+				 					<span class="faqItem">Ownership of data</span>
+				 					<div class="faqDiv">
+				 						Who owns the data and what happens to the data at the end of the pilot?
+				 					</div>
+			 					</li>
+			 					<li>
+				 					<span class="faqItem">Training and Guidance for staff</span>
+				 					<div class="faqDiv">
+				 						What training will we need and what kind of training packages will be provided?
+				 					</div>
+			 					</li>
+			 					<li>
+				 					<span class="faqItem">Risk Management and Clinical Responsibility</span>
+				 					<div class="faqDiv">
+					 					<ul>
+					 						<li>How is risk being managed?</li>
+					 						<li>Will there be an expectation that clinicians are accessing the platform between sessions?</li>
+					 						<li>Who takes clinical responsibility and what do I do if any clinical risk is highlighted?</li>
+					 					</ul>
+				 					</div>
+			 					</li>
+			 					<li>
+				 					<span class="faqItem">Target Use</span>
+				 					<div class="faqDiv">
+					 					<ul>
+					 						<li>Are the resources on the site mainly psycho-educational or will there be psychotherapeutic resources as well?</li>
+					 						<li>Are there targets we have to meet?</li>
+					 						<li>Is there a particular age group that the site is designed for?</li>
+					 						<li>How should we manage cases where the client does not wish to use IncludeME at all, or wishes to stop using the platform?</li>
+					 					</ul>
+					 				</div>
+				 				</li>
+				 				<li>
+				 					<span class="faqItem">Content Areas</span>
+				 					<div class="faqDiv">
+					 					<ul>
+					 						<li>What is available on the platform?</li>
+					 						<li>Do I have to use everything on the platform even if it’s not relevant?</li>
+					 					</ul>
+					 				<div>
+				 				</li>
+				 				<li>
+				 					<span class="faqItem">Linking with services’ EPRS</span>
+				 					<div class="faqDiv">
+				 						Will this integrate with our clinical system or is it standalone? What are the plans for integrating with patient record systems?
+				 					</div>
+			 					</li>
+			 					<li>
+				 					<span class="faqItem">Culture Change and Therapeutic Alliance</span>
+				 					<div class="faqDiv">
+					 					<ul>
+					 						<li>Doesn’t the platform pose a risk to the therapeutic alliance? </li>
+					 						<li>How will my staff manage the culture change?</li>
+					 					</ul>
+					 				</div>
+				 				</li>
+				 				<li>
+				 					<span class="faqItem">Time</span>
+				 					<div class="faqDiv">
+				 						How much time will it take up?
+				 					</div>
+			 					</li>
+			 					<li>
+				 					<span class="faqItem">Sustainability</span>
+				 					<div class="faqDiv">
+					 					<ul>
+					 						<li>What’s the plan after the project ends?</li>
+					 						<li>How do you plan to ensure that services use IncludeME beyond the project?</li>
+					 					</ul>
+				 					</div>
+			 					</li>
+			 				</ul>
+		 				</div>
+
+	 					<div id="tab-3" class="tab-content">
 	 					</div>
-	 					</li>
-	 					<li>
-		 					<span class="faqItem">Ownership of data</span>
-		 					<div class="faqDiv">
-		 						Who owns the data and what happens to the data at the end of the pilot?
-		 					</div>
-	 					</li>
-	 					<li>
-		 					<span class="faqItem">Training and Guidance for staff</span>
-		 					<div class="faqDiv">
-		 						What training will we need and what kind of training packages will be provided?
-		 					</div>
-	 					</li>
-	 					<li>
-		 					<span class="faqItem">Risk Management and Clinical Responsibility</span>
-		 					<div class="faqDiv">
-			 					<ul>
-			 						<li>How is risk being managed?</li>
-			 						<li>Will there be an expectation that clinicians are accessing the platform between sessions?</li>
-			 						<li>Who takes clinical responsibility and what do I do if any clinical risk is highlighted?</li>
-			 					</ul>
-		 					</div>
-	 					</li>
-	 					<li>
-		 					<span class="faqItem">Target Use</span>
-		 					<div class="faqDiv">
-			 					<ul>
-			 						<li>Are the resources on the site mainly psycho-educational or will there be psychotherapeutic resources as well?</li>
-			 						<li>Are there targets we have to meet?</li>
-			 						<li>Is there a particular age group that the site is designed for?</li>
-			 						<li>How should we manage cases where the client does not wish to use IncludeME at all, or wishes to stop using the platform?</li>
-			 					</ul>
-			 				</div>
-		 				</li>
-		 				<li>
-		 					<span class="faqItem">Content Areas</span>
-		 					<div class="faqDiv">
-			 					<ul>
-			 						<li>What is available on the platform?</li>
-			 						<li>Do I have to use everything on the platform even if it’s not relevant?</li>
-			 					</ul>
-			 				<div>
-		 				</li>
-		 				<li>
-		 					<span class="faqItem">Linking with services’ EPRS</span>
-		 					<div class="faqDiv">
-		 						Will this integrate with our clinical system or is it standalone? What are the plans for integrating with patient record systems?
-		 					</div>
-	 					</li>
-	 					<li>
-		 					<span class="faqItem">Culture Change and Therapeutic Alliance</span>
-		 					<div class="faqDiv">
-			 					<ul>
-			 						<li>Doesn’t the platform pose a risk to the therapeutic alliance? </li>
-			 						<li>How will my staff manage the culture change?</li>
-			 					</ul>
-			 				</div>
-		 				</li>
-		 				<li>
-		 					<span class="faqItem">Time</span>
-		 					<div class="faqDiv">
-		 						How much time will it take up?
-		 					</div>
-	 					</li>
-	 					<li>
-		 					<span class="faqItem">Sustainability</span>
-		 					<div class="faqDiv">
-			 					<ul>
-			 						<li>What’s the plan after the project ends?</li>
-			 						<li>How do you plan to ensure that services use IncludeME beyond the project?</li>
-			 					</ul>
-		 					</div>
-	 					</li>
-	 				</ul>
+	 				</div>
 	 			</div>
- 				</section>
-
- 				<section class="Parents tab">
- 					<div id="tab-3" class="tab-content">
- 					</div>
- 				</section>
- 			</div>
  			</div>
  		</div>
 	 </div> 

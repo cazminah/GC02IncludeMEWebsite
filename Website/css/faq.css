@@ -4,6 +4,7 @@
     margin-top: 40px;
 }
 
+
 /* ///////////////////////////////   */
 .tabs-menu {
     height: 30px;
@@ -46,12 +47,12 @@
     background-color: #fff;
     float: left;
     margin-bottom: 20px;
-    width: auto;
+    width: 100%;
     margin-top: -11px;
 }
 
 .tab-content {
-    width: 660px;
+   /* width: 660px;*/
     padding: 20px;
     display: none;
 }
