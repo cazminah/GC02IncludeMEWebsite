@@ -110,14 +110,17 @@
 	background-color: #05a1d1;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 .slick-slide
 {
 	color: black;
     background-color: white;
     margin-right: 5px;
-    margin-left: 5px;
+  /*  margin-left: 5px;*/
     padding-bottom: 10px;
+    min-height: 200px;
 }
 
 div#myNavbar.navbar-collapse.collapse {
@@ -238,4 +241,14 @@ div#myNavbar.navbar-collapse.collapse {
 .tools-padding{
 	margin-left: 8.333333%;
 	margin-right: 8.333333%;
+}
+#second-page {
+	font-family: serif;
+}
+#fourth-page h3 {
+	text-align: center;
+}
+#fourth-page .tool-text{
+	text-align: center;
+	margin: 5px;
 }

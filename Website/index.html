@@ -7,7 +7,7 @@
 	
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
-	// Add the slick-theme.css if you want default styling
+	<!-- // Add the slick-theme.css if you want default styling -->
 	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 	<link rel="stylesheet" type="text/css" href="css/testimonial/style.css">
 	<link rel="stylesheet" href="css/design.css">
@@ -27,161 +27,68 @@
 	<script type="text/javascript" src="js/testimonial/jquery.flexslider-min.js"></script>
 	<script type="text/javascript" src="js/testimonial/main.js"></script>
 
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('.container').fullpage({
-				anchors: ['firstPage', 'secondPage', '3rdPage'],
-				// sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C', '#000000'],
-				navigation: true,
-				navigationPosition: 'right',
-				navigationTooltips: ['Home', 'About', 'Third and last page']
-				//css3: true
-			});
-			$('.responsive').slick({
-  dots: false,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: false
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-});
-		});
-	</script>
+	<script type="text/javascript" src="js/main.js"></script>
 </head>
-<!-- //////////////////////////////////// MAIN BODY -->
+<!-- //////////////////////////////////// NAVBAR-->
 <body>
-
-	 <div id="header">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12">
-                    <nav class=
-                    "navbar navbar-default navbar-fixed-top main-nav" role="navigation">
+	<div id="header"> 
+		<div class="navbar navbar-default navbar-fixed-top main-nav" role="navigation">
+        	<div class="container-fluid">
+            	<div class="row">
+                	<div class="col-sm-12">
                         <div class="navbar-header">
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-                            <a class="pull-left" href="#"><img src="images/IncludeMELogo.png" style="max-height:75px; margin-top: 0px;"></a>
+                            <a class="navbar-left" href="#"><img src="images/IncludeMELogo.png" style="max-height:75px; 
+                            	margin-top: 0px;"></a>
                         </div>
 						<div class="collapse navbar-collapse" id="myNavbar">
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="#" id="circle-nav"><img src="images/Question-Mark2.png"></a></li>
+								<li><a href="faq.html" id="circle-nav"><img src="images/Question-Mark2.png"></a></li>
 								<li><a href="#" id="circle-nav"><img src="images/IconContact.png"></a></li>
 								<li><a href="#" id="circle-nav"><img src="images/IconLinks.png"></a></li>
-								<li><a href="https://camhsweb.silvercloudhealth.com/account/login/?next=/"><img src="images/loginbtn.png"></a></li>
+								<li><a href="https://camhsweb.silvercloudhealth.com/account/login/?next=/"><img 
+									src="images/loginbtn.png"></a></li>
 							</ul>
 						</div>
-                    </nav>
+                    </div>
                 </div>
             </div>
         </div>
-		
-	<!-- //////////////////////////////////// NAVBAR -->
+	 </div> 
+	<!-- //////////////////////////////////// MAIN BODY  -->
 	<div class="container">
 		<div id="fullpage">
 			<!-- //////////////////////////////////// PICTURE: SECTION 1 -->
 			<!--  <section class="section" id="first-page">
                 <div class="row">
-                    <div class="col-md-12 no-padding">
-                        <div class="carousel slide" data-ride="carousel"
-                        id="carousel-example-generic">
-                             Indicators -->
-                            <!-- <ol class="carousel-indicators">
-                                <li class="active" data-slide-to="0"
-                                data-target="#carousel-example-generic">
-                                </li>
-                                <li data-slide-to="1" data-target=
-                                "#carousel-example-generic"></li>
-                                <li data-slide-to="2" data-target=
-                                "#carousel-example-generic"></li> -->
-                           <!--  </ol> --><!-- Wrapper for slides -->
-                           <!--  <div class="carousel-inner">
-                                <div class="item active">
-                                    <img alt="..." src=
-                                    "http://placehold.it/1200x315">
-                                    <div class="carousel-caption">
-                                        <h3>Caption Text</h3>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img alt="..." src=
-                                    "http://placehold.it/1200x315">
-                                    <div class="carousel-caption">
-                                        <h3>Caption Text</h3>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img alt="..." src=
-                                    "http://placehold.it/1200x315">
-                                    <div class="carousel-caption">
-                                        <h3>Caption Text</h3>
-                                    </div>
-                                </div> -->
-                           <!--  </div>< -->!-- Controls -->
-                            <!--  <a class="left carousel-control" data-slide=
-                            "prev" href="#carousel-example-generic" role=
-                            "button"><span class=
-                            "glyphicon glyphicon-chevron-left"></span></a>
-                            <a class="right carousel-control" data-slide=
-                            "next" href="#carousel-example-generic" role=
-                            "button"><span class=
-                            "glyphicon glyphicon-chevron-right"></span></a>
-                        </div> --><!-- Carousel -->
-                   <!--  </div>
+              
                 </div>
              </section> --> 
 			<!-- //////////////////////////////////// ABOUT PAGE -->
 			<section id="second-page" class="section">
 				<div class="row">					
-					<div class="col-md-5 col-md-offset-6">
-						<header>What is IncludeME?</header>
+					<div class="col-sm-5 col-sm-offset-6 col-xs-10 col-xs-offset-1">
+						<header class="lead">What is IncludeME?</header>
 						<p>IncludeME is an interactive, online platform to help improve engagement with children and young people accessing mental health services. Aimed at a broad range of services, whether based in a clinic, school or the community, this online platform is aimed at supporting children and young people and their families to work collaboratively with those supporting them, drawing on principles of shared decision making.</p>
 					</div>
-					<div class="col-md-1"></div>
+					<!-- <div class="col-sm-1"></div> -->
 				</div>
 			</section>
 			<!-- //////////////////////////////////// WHY PAGE -->
 			<section id="third-page" class="section">
 				<div class="row">
-					<div class="col-md-1">
-					</div>
-					<div class="col-md-5 col-md-offset-3">
-						<header>Why use IncludeME:</header>
+					<div class="col-sm-5 col-sm-offset-4 col-xs-8 col-xs-offset-2">
+						<header class="lead">Why use IncludeME:</header>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-4 col-md-offset-1">
-						<h2>children and young people:</h2>	
-						<ul id="ul-orange">
+					<div class="col-sm-4 col-sm-offset-1">
+						<h2 class="lead text-center">children and young people:</h2>	
+						<ul id="ul-orange" class="list-unstyled well">
 							<li>provides an online space to share ideas and work collaboratively</li>
 							<li>is easily accessible and user friendly</li>
 							<li>can also be accessed out of sessions – promotes self-management and can track between session progress</li>
@@ -189,15 +96,15 @@
 						</ul>
 					</div>
 
-					<div class="col-md-4 col-md-offset-1">
-						<h2>children and young people:</h2>	
-						<ul id="ul-blue">
+					<div class="col-sm-4 col-sm-offset-1">
+						<h2 class="lead text-center">children and young people:</h2>	
+						<ul id="ul-blue" class="list-unstyled well well-lg">
 							<li>Provides a secure space and access to an online toolbox</li>
 							<li>Allows clinicians and young people to complete and review outcome measures in a collaborative and meaningful way</li>
 							<li>Aims to motivate young people to be more involved in their care through collaborative working</li>
 						</ul>
 					</div>
-					<div class="col-md-1"></div>
+					<!-- <div class="col-md-1"></div> -->
 				</div>
 			</section>
 			<!-- //////////////////////////////////// TOOLS PAGE -->
@@ -223,7 +130,7 @@
 						  		<h3>My <br>Decisions</h3>
 						  		<img class="toolsIcons" src="images/ToolsIcons/decisions.png">
 						  		<div class="tool-text">
-						  			Develop effective decision making skills.<br><br>
+						  			Develop effective decision making skills.<!-- <br><br> -->
 						  		</div>
 						  	</div>
 						  	<div>
