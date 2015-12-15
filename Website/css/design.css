@@ -1,4 +1,96 @@
 
+/*///////////////////////////// testimonials override ////////////////////// */
+.cd-testimonials-wrapper{
+	background-color: orange;
+}
+
+
+.cd-testimonials-all {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: red;
+  z-index: 2;
+  
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+ 
+.cd-testimonials-all.is-visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+
+.cd-testimonials p {
+	font-size: 2em;
+}
+
+.cd-author .cd-author-info li:last-child {
+	font-size: 1.4em;
+}
+
+/*///////////////////////////// testimonials arrows override ////////////////////// */
+.flex-direction-nav li {
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  top: 0;
+}
+ 
+.flex-direction-nav li:first-child {
+  left: 0;
+}
+ 
+.flex-direction-nav li:last-child {
+  right: 0;
+}
+ 
+.flex-direction-nav li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+ 
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+ 
+  transition: background-color 0.2s;
+}
+ 
+.flex-direction-nav li a::before, .flex-direction-nav li a::after {
+  /* left and right arrows in css only */
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 2px;
+  height: 13px;
+  background-color: white;
+}
+ 
+.flex-direction-nav li a::before {
+  transform: translateY(-35px) rotate(45deg);
+}
+ 
+.flex-direction-nav li a::after {
+  transform: translateY(-27px) rotate(-45deg);
+}
+ 
+.flex-direction-nav li:last-child a::before {
+  transform: translateY(-35px) rotate(-45deg);
+}
+ 
+.flex-direction-nav li:last-child a::after {
+  transform: translateY(-27px) rotate(45deg);
+}
+
+
+
 /*///////////////////////////// bootstrap override ////////////////////// */
 .navbar-nav > li > a {
 	padding: 0px;
@@ -26,15 +118,25 @@
 	background-color: #05a1d1;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 .slick-slide
 {
 	color: black;
     background-color: white;
     margin-right: 5px;
-    margin-left: 5px;
+  /*  margin-left: 5px;*/
     padding-bottom: 10px;
+    min-height: 200px;
 }
+
+div#myNavbar.navbar-collapse.collapse {
+	padding-top: 10px;
+}
+
+
+
 
 /* ///////////////////////// Login button ///////////////////////////// */
 #Login {
@@ -70,15 +172,17 @@
 /* ///////////////////////// End of Login button ///////////////////////////// */
 
 #second-page {
-	background-image: url("../images/ocean.jpg");
+	background-image: url("../images/Section2Balloons.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
+
 }
 #third-page {
 	background-image: url("../images/mountain.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 #third-page header{
 	text-align: justify;
@@ -118,7 +222,7 @@
 		margin: auto;
 	}
 
-
+/* //////////////////// full page jquery /////////////////////////// */
 #header, #footer{
 		position:fixed;
 		height: 50px;
@@ -136,7 +240,7 @@
 	#footer{
 		bottom:0px;
 	}
-
+/* //////////////////// end of full page jquery /////////////////////////// */
 	.container{
 		margin-top: 50px;
 	}
@@ -147,4 +251,50 @@
 .tools-padding{
 	margin-left: 8.333333%;
 	margin-right: 8.333333%;
+}
+#second-page {
+	font-family: serif;
+}
+#fourth-page h3 {
+	text-align: center;
+}
+#fourth-page .tool-text{
+	text-align: center;
+	margin: 5px;
+}
+/* ////////////////////////////////////  FAQ page ///////////////////////////// */
+.faqItem {
+	cursor: pointer; 
+}
+.faqDiv {
+	display: none;
+	margin-bottom: 15px;
+	background-color: #6666ff;
+	border-radius: 3px;
+}
+.tab h2{
+	font-family: serif;
+	margin-top: 20px;
+	font-size: 1.5em;
+	color: #05a1c1;
+}
+
+}
+.faqList {
+	list-style: none;
+}
+
+
+.faqItem {
+	font-family: serif;
+}
+/* ////////////////////////// menue hover text //////////////////////// */
+.Zebra_Tooltip .Zebra_Tooltip_Message {
+    font-size: 12px;
+    padding: 7px;
+}
+/* ////////////////////////// Footer //////////////////////// */
+
+.footer{
+	background-color: black;
 }
