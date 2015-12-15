@@ -14,7 +14,7 @@
                     </div>
 					<div class="collapse navbar-collapse" id="myNavbar">
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="faq.html" id="circle-nav"><img src="images/Question-Mark2.png"></a></li>
+							<li><a href="faq.html" id="circle-nav"><img src="images/IconFAQs.png"></a></li>
 							<li><a href="#" id="circle-nav"><img src="images/IconContact.png"></a></li>
 							<li><a href="#" id="circle-nav"><img src="images/IconLinks.png"></a></li>
 							<li><a href="https://camhsweb.silvercloudhealth.com/account/login/?next=/"><img 
