@@ -68,14 +68,15 @@
 .faqDiv {
     display: none;
     margin-bottom: 15px;
-    background-color: #6666aa;
+    background-color: #e6b27e;
     border-radius: 3px;
 }
 .faqSubDiv{
     display: none;
-    margin-bottom: 15px;
-    background-color: #6666ff;
+    margin-bottom: 10px;
+    background-color: #85a1d1;
     border-radius: 3px;
+    padding: 10px;
 }
 .tab h2{
     font-family: serif;
@@ -84,13 +85,17 @@
     color: #05a1c1;
 }
 
-}
 /*ul.faqList {
     list-style: none !important;
 }*/
 
-#ClinicianSubLists {
-    list-style: none;
+.clinicianSubLists {
+    list-style: outside none none; 
+    list-style-image: url(../images/1.gif);
+    padding: 10px 20px 10px 30px;
+}
+.clinicianSubLists li {
+    padding: 3px;
 }
 
 
