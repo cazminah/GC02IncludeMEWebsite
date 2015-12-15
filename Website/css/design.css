@@ -110,14 +110,17 @@
 	background-color: #05a1d1;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 .slick-slide
 {
 	color: black;
     background-color: white;
     margin-right: 5px;
-    margin-left: 5px;
+  /*  margin-left: 5px;*/
     padding-bottom: 10px;
+    min-height: 200px;
 }
 
 div#myNavbar.navbar-collapse.collapse {
@@ -164,12 +167,14 @@ div#myNavbar.navbar-collapse.collapse {
 	background-image: url("../images/ocean.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
+
 }
 #third-page {
 	background-image: url("../images/mountain.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 #third-page header{
 	text-align: justify;
@@ -209,7 +214,7 @@ div#myNavbar.navbar-collapse.collapse {
 		margin: auto;
 	}
 
-
+/* //////////////////// full page jquery /////////////////////////// */
 #header, #footer{
 		position:fixed;
 		height: 50px;
@@ -227,7 +232,7 @@ div#myNavbar.navbar-collapse.collapse {
 	#footer{
 		bottom:0px;
 	}
-
+/* //////////////////// end of full page jquery /////////////////////////// */
 	.container{
 		margin-top: 50px;
 	}
@@ -239,6 +244,7 @@ div#myNavbar.navbar-collapse.collapse {
 	margin-left: 8.333333%;
 	margin-right: 8.333333%;
 }
+<<<<<<< HEAD
 
 /*INDIVIDUAL ITEMS STYLING*/
 	/*Individual Items*/
@@ -379,3 +385,47 @@ h1#tools-header{
 	background-color: #FFF;
 	opacity: 0.8;
 }
+=======
+#second-page {
+	font-family: serif;
+}
+#fourth-page h3 {
+	text-align: center;
+}
+#fourth-page .tool-text{
+	text-align: center;
+	margin: 5px;
+}
+/* ////////////////////////////////////  FAQ page ///////////////////////////// */
+.faqItem {
+	cursor: pointer; 
+}
+.faqDiv {
+	display: none;
+	margin-bottom: 15px;
+	background-color: #6666ff;
+	border-radius: 3px;
+}
+.tab h2{
+	font-family: serif;
+	margin-top: 20px;
+	font-size: 1.5em;
+	color: #05a1c1;
+}
+
+}
+.faqList {
+	list-style: none;
+}
+
+
+.faqItem {
+	font-family: serif;
+}
+/* ////////////////////////// menue hover text //////////////////////// */
+.Zebra_Tooltip .Zebra_Tooltip_Message {
+    font-size: 12px;
+    padding: 7px;
+}
+
+>>>>>>> origin/Josh-Testimonials
