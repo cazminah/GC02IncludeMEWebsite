@@ -1,64 +1,15 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-	<title>Include Me Project</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/bootstrap.css">
-	
-	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
-	<!-- // Add the slick-theme.css if you want default styling -->
-	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
-	<link rel="stylesheet" type="text/css" href="css/testimonial/style.css">
-	<link rel="stylesheet" href="css/design.css">
-	
-	<style>
-	/* Fixed header and footer.
-	* --------------------------------------- */
-	</style>
-
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
-	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-	<script type="text/javascript" src="js/slick.js"></script>
-	<script type="text/javascript" src="js/testimonial/modernizr.js"></script>
-	<script type="text/javascript" src="js/testimonial/masonry.pkgd.min.js"></script>
-	<script type="text/javascript" src="js/testimonial/jquery.flexslider-min.js"></script>
-	<script type="text/javascript" src="js/testimonial/main.js"></script>
-
-	<script type="text/javascript" src="js/main.js"></script>
+	<?php
+	include('template/head.php');
+	?>
 </head>
 <!-- //////////////////////////////////// NAVBAR-->
 <body>
-	<div id="header"> 
-		<div class="navbar navbar-default navbar-fixed-top main-nav" role="navigation">
-        	<div class="container-fluid">
-            	<div class="row">
-                	<div class="col-sm-12">
-                        <div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-                            <a class="navbar-left" href="#"><img src="images/IncludeMELogo.png" style="max-height:75px; 
-                            	margin-top: 0px;"></a>
-                        </div>
-						<div class="collapse navbar-collapse" id="myNavbar">
-							<ul class="nav navbar-nav navbar-right">
-								<li><a href="faq.html" id="circle-nav"><img src="images/Question-Mark2.png"></a></li>
-								<li><a href="#" id="circle-nav"><img src="images/IconContact.png"></a></li>
-								<li><a href="#" id="circle-nav"><img src="images/IconLinks.png"></a></li>
-								<li><a href="https://camhsweb.silvercloudhealth.com/account/login/?next=/"><img 
-									src="images/loginbtn.png"></a></li>
-							</ul>
-						</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-	 </div> 
+	<?php
+	include('template/header.php');
+	?>
 	<!-- //////////////////////////////////// MAIN BODY  -->
 	<div class="container">
 		<div id="fullpage">
@@ -72,8 +23,12 @@
 			<section id="second-page" class="section">
 				<div class="row">					
 					<div class="col-sm-5 col-sm-offset-6 col-xs-10 col-xs-offset-1">
-						<header class="lead">What is IncludeME?</header>
-						<p>IncludeME is an interactive, online platform to help improve engagement with children and young people accessing mental health services. Aimed at a broad range of services, whether based in a clinic, school or the community, this online platform is aimed at supporting children and young people and their families to work collaboratively with those supporting them, drawing on principles of shared decision making.</p>
+						<?php
+						include('content/fp-about-us.php');
+
+						echo '<header class="lead">'.$arrFPAboutUs['header'].'</header>';
+						echo '<p>'.$arrFPAboutUs['body'].'</p>';
+						?>
 					</div>
 					<!-- <div class="col-sm-1"></div> -->
 				</div>
@@ -112,13 +67,34 @@
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 tools-padding">
 						<div class="responsive">
-						  	<div>
-						  		<h3>Doodle <br>Goals</h3>
-						  		<img class="toolsIcons" src="images/ToolsIcons/doodle_goals.png">
-						  		<div class="tool-text">
-						  			An interactive space to create and monitor goals in a fun and personalised way.
-						  		</div>
-						  	</div>
+							<?php
+							// read the json file
+							$jsonFile = file_get_contents('content/fp-tools.json');
+							$arrFPTools = json_decode($jsonFile, true);
+							$arrFPTools = $arrFPTools['tools'];
+							foreach($arrFPTools as $arrFPTool){
+								$str = '<div>';
+								$str .= '<h3>'.$arrFPTool['title'].'</h3>';
+								$str .= '<img class="toolsIcons" src="images/ToolsIcons/'.$arrFPTool['image'].'">';
+								$str .= '<div class="tool-text">'.$arrFPTool['text'].'</div>';
+								$str .= '</div>'.PHP_EOL;
+								echo $str;
+
+							}
+							/*
+							include('content/fp-tools.php');
+							foreach($arrFPTools as $arrFPTool){
+								$str = '<div>';
+								$str .='<h3>'.$arrFPTool[0].'</h3>';
+								$str .='<img class="toolsIcons" src="images/ToolsIcons/'.$arrFPTool[1].'">';
+								$str .='<div class="tool-text">'.$arrFPTool[2].'</div>';
+								$str .= '</div>'.PHP_EOL;
+								echo $str;
+
+							}
+							*/
+							?>
+					  	
 						  	<div>
 						  		<h3>Feelings <br>Finder</h3>
 						  		<img class="toolsIcons" src="images/ToolsIcons/feelings_finder.png">
