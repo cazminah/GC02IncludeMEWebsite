@@ -1,7 +1,8 @@
 
 /*///////////////////////////// testimonials override ////////////////////// */
 .cd-testimonials-wrapper{
-	background-color: oranges}
+	background-color: orange;
+}
 
 
 .cd-testimonials-all {
@@ -24,6 +25,13 @@
   transition: opacity .3s 0s, visibility 0s 0s;
 }
 
+.cd-testimonials p {
+	font-size: 2em;
+}
+
+.cd-author .cd-author-info li:last-child {
+	font-size: 1.4em;
+}
 
 /*///////////////////////////// testimonials arrows override ////////////////////// */
 .flex-direction-nav li {
@@ -285,4 +293,8 @@ div#myNavbar.navbar-collapse.collapse {
     font-size: 12px;
     padding: 7px;
 }
+/* ////////////////////////// Footer //////////////////////// */
 
+.footer{
+	background-color: black;
+}
