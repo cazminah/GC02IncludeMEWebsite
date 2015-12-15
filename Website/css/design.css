@@ -296,5 +296,17 @@ div#myNavbar.navbar-collapse.collapse {
 /* ////////////////////////// Footer //////////////////////// */
 
 .footer{
-	background-color: black;
+	background-color: #FFF;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+#silvercloudlogo{
+	width: 40%;
+	height: 40%;
+	padding-top: 40px;
+}
+#EBPULogo{
+	width: 40%;
+	height: 40%;
+	float: right;
 }
