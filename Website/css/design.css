@@ -239,3 +239,143 @@ div#myNavbar.navbar-collapse.collapse {
 	margin-left: 8.333333%;
 	margin-right: 8.333333%;
 }
+
+/*INDIVIDUAL ITEMS STYLING*/
+	/*Individual Items*/
+#what-heading{
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 30px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	color: #6e8b31;
+}
+#why-heading{
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 30px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	color: #fab61c;
+}
+
+h1 {
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 30px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	color: #FFF;
+}
+h2{
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 30px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	color: #FFF;
+}
+h3{
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 30px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	color: #05a1d1;
+}
+p {
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	color: #FFF;
+
+}
+
+.p-intro-container{
+	background-color: #6e8b31;
+	opacity: 0.7;
+	border-radius: 20px;
+}
+#page-one-text-container{
+	background-color: #FFF;
+	opacity: 0.7;
+	border-radius: 20px;
+	margin-left: 1px;
+	margin-right: 1px;
+}
+#why-list-container-orange{
+	background-color: #fab61c;
+	opacity: 0.9;
+	border-radius: 20px;
+}
+#why-list-container-blue{
+	background-color: #05a1d1;
+	opacity: 0.9;
+	border-radius: 20px;
+}
+#why-list-container-orange ul li{
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	color: #FFF;
+}
+#why-list-container-blue ul li{
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	color: #FFF;
+}
+h2#list-heading-orange{
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 25px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	color: #fab61c;
+}
+h2#list-heading-blue{
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 25px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	color: #05a1d1;
+}
+#overall-list-container{
+	background-color: #FFF;
+	opacity: 0.7;
+	border-radius: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.tool-text{
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	color: #05a1d1;
+}
+div#why-list-container-white{
+	background-color: #FFF;
+	border-radius: 20px;
+}
+h1#tools-header{
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 30px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	color: #05a1d1;
+}
+#tools-header-container{
+	border-radius: 20px;
+	background-color: #FFF;
+	opacity: 0.8;
+}
