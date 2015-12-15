@@ -60,4 +60,41 @@
 #tab-1 {
  display: block;   
 }
+/* ///////////////////////////////// list / text toggle /////////////////// */
+
+.faqItem {
+    cursor: pointer; 
+}
+.faqDiv {
+    display: none;
+    margin-bottom: 15px;
+    background-color: #6666aa;
+    border-radius: 3px;
+}
+.faqSubDiv{
+    display: none;
+    margin-bottom: 15px;
+    background-color: #6666ff;
+    border-radius: 3px;
+}
+.tab h2{
+    font-family: serif;
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #05a1c1;
+}
+
+}
+/*ul.faqList {
+    list-style: none !important;
+}*/
+
+#ClinicianSubLists {
+    list-style: none;
+}
+
+
+.faqItem {
+    font-family: serif;
+}
 
