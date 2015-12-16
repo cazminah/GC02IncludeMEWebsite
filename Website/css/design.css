@@ -212,7 +212,10 @@ div#myNavbar.navbar-collapse.collapse {
 	color: black;
 }
 #fourth-page{
-	background-color: #f6921e;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("../images/section2Balloons.jpg");
 }
 #second-page {
 	color: black;
@@ -255,6 +258,7 @@ div#myNavbar.navbar-collapse.collapse {
 #second-page {
 	font-family: serif;
 }
+
 #fourth-page h3 {
 	text-align: center;
 }
@@ -360,8 +364,19 @@ hr{
 	border-radius: 50px;
 	padding: 10px;
 }
-
-
+#tools-container{
+	background-color: #FFF;
+	opacity: 0.9;
+	border-radius: 50px;
+	padding: 10px;
+}
+#lead-tools{
+	color: #05a1d1;
+	text-align: center;
+}
+#hr-tools{
+	background-color: #05a1d1;
+}
 p{
 	font-family: Calibri;
 	font-size: 15px;
