@@ -310,3 +310,26 @@ div#myNavbar.navbar-collapse.collapse {
 	height: 40%;
 	float: right;
 }
+/* ////////////////////////// Element Styling //////////////////////// */
+h1 {
+	font-family: Calibri;
+	font-weight: bold;
+	font-size: 50px;
+}
+#intro-text{
+	font-family: Calibri;
+	font-weight: bold;
+	font-size: 50px;
+	border-radius: 50px;
+	background-color: #FFF;
+	opacity: 0.9;
+	padding: 10px;
+}
+.lead{
+	text-align: center;
+}
+
+p{
+	font-family: Calibri;
+	font-size: 15px;
+}
