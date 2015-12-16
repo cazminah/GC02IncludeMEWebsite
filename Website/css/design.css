@@ -320,16 +320,50 @@ h1 {
 	font-family: Calibri;
 	font-weight: bold;
 	font-size: 50px;
+	line-height: 0.7em;
 	border-radius: 50px;
 	background-color: #FFF;
 	opacity: 0.9;
 	padding: 10px;
+	color: #f6921e;
 }
 .lead{
+	font-size: 40px;
 	text-align: center;
+	font-weight: bold;
+	
 }
+
+hr{
+	height: 2px;
+	border-top: 0px;
+}
+
+#lead-what{
+	color: #f6921e;
+}
+
+#hr-what{
+	background-color: #f6921e;
+}
+
+#lead-why{
+	color: #05a1d1;
+}
+
+#hr-why{
+	background-color: #05a1d1;
+}
+#why-container{
+	background-color: #FFF;
+	opacity: 0.9;
+	border-radius: 50px;
+	padding: 10px;
+}
+
 
 p{
 	font-family: Calibri;
 	font-size: 15px;
 }
+
