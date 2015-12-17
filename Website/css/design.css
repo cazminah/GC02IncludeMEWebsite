@@ -367,3 +367,70 @@ p{
 	font-size: 15px;
 }
 
+
+
+/*sfsdasdfadsasdasdasdasdsfsdasdfadsasdasdasdasdsfsdasdfadsasdasdasdasdsfsdasdfadsasdasdasdasd*/
+
+* {
+    font-family: Calibri;
+}
+
+.lead {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.list {
+    font-size: 18px;
+}
+
+p {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+   .list {
+        font-size: 14px;
+   }
+
+   p {
+       font-size: 14px;
+   }
+}
+
+
+#second-page {
+    background-image: url("../images/ColouredPencils.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#second-header {
+   border: 15px solid rgba(5,161,209,0.9);
+   -webkit-background-clip: padding-box; /* for Safari */
+   background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    border-radius: 15px;
+    background-color: rgba(5,161,209,0.9);
+
+    font-weight: bold;
+    font-size: 42px;
+    text-align: center;
+}
+
+#second-text {    
+/*  border: 40px solid rgb(246,146,30); */
+   border: 30px solid rgba(5,161,209,0.9);
+   -webkit-background-clip: padding-box; /* for Safari */
+   background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    border-radius: 15px;
+    background-color: rgba(5,161,209,0.9);
+
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+   -moz-column-count: 2; /* Firefox */
+   column-count: 2;
+   -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+   -moz-column-gap: 40px; /* Firefox */
+   column-gap: 40px;
+}
+
