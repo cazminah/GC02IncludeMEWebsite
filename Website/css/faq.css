@@ -1,5 +1,4 @@
 
-
 #tabs-container {
     margin-top: 40px;
 }
@@ -62,13 +61,14 @@
 }
 /* ///////////////////////////////// list / text toggle /////////////////// */
 .faqList li{
-    margin-top: 15px;
+    margin-top: 10px;
     font-family: Calibri;
-    font-weight: bold;
-    font-size: 20px;
     list-style: none;
-    text-align: center;
-    color: #05a1d1;
+    color: #000;
+    list-style-image: url(../images/1.gif);
+}
+.faqList li li{
+    list-style-image: url(../images/bullet_blue.png);
 }
 
 .faqItem {
@@ -76,33 +76,23 @@
 }
 .faqDiv {
     display: none;
-    margin-bottom: 15px;
-    background-color: #e6b27e;
-    border-radius: 3px;
+    margin-bottom: 10px;
+    background-color: #F0D6B9;
+    padding: 10px;
 }
 .faqSubDiv{
     display: none;
     margin-bottom: 10px;
     background-color: #85a1d1;
-    border-radius: 3px;
     padding: 10px;
 }
 .tab h2{
     font-family: Calibri;
     font-weight: bold;
-    margin-top: 20px;
-    font-size: 1.9em;
-    color: #000;
-}
-
-/*ul.faqList {
-    list-style: none !important;
-}*/
-
-.clinicianSubLists {
-    list-style: outside none none; 
-    list-style-image: url(../images/1.gif);
-    padding: 10px 20px 10px 30px;
+    margin: 10px;
+    font-size: 1.5em;
+    color: #05a1d1;
+    text-align: center;
 }
 .clinicianSubLists li {
     padding: 3px;
@@ -113,22 +103,14 @@
     font-family: Calibri;
 }
 
-hr{
+/*hr{
     background-color: #05a1d1;
-}
+}*/
 
-h2{
-    text-align: center;
+/*#tab-2-ul li{
+    margin-top: 10px;
     font-family: Calibri;
-    font-weight: bold;
-}
-
-#tab-2-ul li{
-    margin-top: 15px;
-    font-family: Calibri;
-    font-weight: bold;
     font-size: 20px;
     list-style: none;
-    text-align: center;
     color: #05a1d1;
-}
+}*/

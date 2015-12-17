@@ -276,32 +276,7 @@ div#myNavbar.navbar-collapse.collapse {
 	text-align: center;
 	margin: 5px;
 }
-/* ////////////////////////////////////  FAQ page ///////////////////////////// */
-.faqItem {
-	cursor: pointer; 
-}
-.faqDiv {
-	display: none;
-	margin-bottom: 15px;
-	background-color: #6666ff;
-	border-radius: 3px;
-}
-.tab h2{
-	font-family: serif;
-	margin-top: 20px;
-	font-size: 1.5em;
-	color: #05a1c1;
-}
 
-}
-.faqList {
-	list-style: none;
-}
-
-
-.faqItem {
-	font-family: serif;
-}
 /* ////////////////////////// menue hover text //////////////////////// */
 .Zebra_Tooltip .Zebra_Tooltip_Message {
     font-size: 12px;
