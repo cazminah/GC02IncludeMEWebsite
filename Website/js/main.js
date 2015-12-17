@@ -2,13 +2,21 @@ var slickSliderMaxHeight = 0;
 
 $(document).ready(function() {
   $('.container').fullpage({
-		anchors: ['firstPage', 'secondPage', '3rdPage'],
+		anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
 		// sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C', '#000000'],
 		navigation: true,
 		navigationPosition: 'right',
-		navigationTooltips: ['Home', 'About', 'Third and last page']
+		navigationTooltips: ['What is Include Me', 'Why use Include Me', 'Tools', 'Testimonials']
 		//css3: true
 	});
+
+  /* ///////////// Tooltips ///////////////////////////////////// */
+   new $.Zebra_Tooltips($('.tooltips'), {
+        'background_color': '#C40000',
+        'color': '#FFF',
+        'position': 'center'
+    });
+    /* ///////////// End of Tooltips ///////////////////////////////////// */
 
 	$('.responsive').slick({
     dots: false,
