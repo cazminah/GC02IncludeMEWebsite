@@ -61,7 +61,7 @@
  display: block;   
 }
 /* ///////////////////////////////// list / text toggle /////////////////// */
-#marjani li{
+.faqList li{
     margin-top: 15px;
     font-family: Calibri;
     font-weight: bold;
