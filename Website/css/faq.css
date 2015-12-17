@@ -1,10 +1,24 @@
 
+* {
+    font-family: Calibri;
+    font-size: 18px;
+}
+
 #tabs-container {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 
 /* ///////////////////////////////   */
+#title h1 {
+    font-family: Calibri;
+    font-weight: bold;
+    margin-top: 50px;
+    font-size: 42px;
+    color: #05a1d1;
+    text-align: center;
+}
+
 .tabs-menu {
     height: 30px;
     float: left;
@@ -35,10 +49,19 @@
     text-transform: uppercase;
     color: #fff;
     text-decoration: none; 
+    font-size: 28px;
 }
 
 .tabs-menu .current a {
-    color: #2e7da3;
+    color: #ffffff;
+}
+
+#tab-yp {
+    background-color: rgba(246,146,30,90);
+}
+
+#tab-clinician {
+    background-color: rgba(05,161,209,90);
 }
 
 .tab {
@@ -57,8 +80,15 @@
 }
 
 #tab-1 {
- display: block;   
+    display: block;
+    background-color: rgba(246,146,30,90);
 }
+
+#tab-2 {
+    background-color: rgba(05,161,209,90);
+}
+
+
 /* ///////////////////////////////// list / text toggle /////////////////// */
 .faqList li{
     margin-top: 10px;
@@ -85,14 +115,6 @@
     margin-bottom: 10px;
     background-color: #85a1d1;
     padding: 10px;
-}
-.tab h2{
-    font-family: Calibri;
-    font-weight: bold;
-    margin: 10px;
-    font-size: 1.5em;
-    color: #05a1d1;
-    text-align: center;
 }
 .clinicianSubLists li {
     padding: 3px;
