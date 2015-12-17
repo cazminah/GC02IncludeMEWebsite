@@ -2,8 +2,13 @@
 /*///////////////////////////// FullPage override ////////////////////// */
 
 #fp-nav ul li .fp-tooltip {
-	color: #000;
+	color: #FFF;
+	background-color: #C40000;
+	padding: 3px;
+	border-radius: 3px;
+	top: -7px;
 }
+
 
 /*///////////////////////////// End of FullPage override ////////////////////// */
 
@@ -241,17 +246,15 @@ div#myNavbar.navbar-collapse.collapse {
 		height: 50px;
 		display:block;
 		width: 100%;
-		background: #333;
 		z-index:9999;
-		color: #f2f2f2;
 		padding: 0;
-		text-align: center;
 	}
 	#header{
 		top:0px;
+		text-align: center;
 	}
 	#footer{
-		bottom:0px;
+		bottom:37px;
 	}
 /* //////////////////// end of full page jquery /////////////////////////// */
 	.container{
@@ -389,6 +392,10 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+   #second-header {
+   		font-size: 28px;
+   }
+
    .list {
         font-size: 14px;
    }
@@ -432,5 +439,9 @@ p {
    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
    -moz-column-gap: 40px; /* Firefox */
    column-gap: 40px;
+}
+/* ///////////////////// Contact Us ////////////////// */
+.contactUs {
+	margin-top: 70px;
 }
 
