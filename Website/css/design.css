@@ -221,6 +221,10 @@ div#myNavbar.navbar-collapse.collapse {
 	list-style-image:  url("../images/bullet_orange2.png");
 }
 
+#center-lists{
+	padding-left: 50px;
+}
+
 #third-page ul li {
 	padding-bottom: 10px;
 	text-decoration: none;
@@ -231,6 +235,12 @@ div#myNavbar.navbar-collapse.collapse {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-image: url("../images/section2Balloons.jpg");
+}
+#fifth-page{
+/*	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("../images/section2Balloons.jpg");*/
 }
 #second-page {
 	color: black;
@@ -445,3 +455,18 @@ p {
 	margin-top: 70px;
 }
 
+/*LINKS PAGE*/
+#resources-list li {
+	font-size: 22px; 
+}
+
+#resource-list-title {
+	padding-top: 20px;
+}
+ul#resources-list{
+	padding-bottom: 70px;
+}
+
+#footer footer{
+	background-color: #FFF;
+}
