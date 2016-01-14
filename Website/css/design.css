@@ -264,7 +264,7 @@ div#myNavbar.navbar-collapse.collapse {
 		text-align: center;
 	}
 	#footer{
-		bottom:37px;
+		bottom:35px;
 	}
 /* //////////////////// end of full page jquery /////////////////////////// */
 	.container{
@@ -300,16 +300,16 @@ div#myNavbar.navbar-collapse.collapse {
 .footer{
 	background-color: #FFF;
 	padding-top: 20px;
-	padding-bottom: 50px;
+	padding-bottom: 0px;
 }
 #silvercloudlogo{
-	width: 40%;
-	height: 40%;
+	width: 30%;
+	height: 30%;
 	padding-top: 40px;
 }
 #EBPULogo{
-	width: 40%;
-	height: 40%;
+	width: 20%;
+	height: 20%;
 	float: right;
 }
 /* ////////////////////////// Element Styling //////////////////////// */

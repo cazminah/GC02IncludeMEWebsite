@@ -21,12 +21,13 @@
              </section> --> 
 			<!-- //////////////////////////////////// ABOUT PAGE -->
 			<section id="second-page" class="section">
+				<?php
+				include('content/fp-about-us.php');
+				?>
 				<div class="row">					
 					<div class="col-sm-5 col-sm-offset-6 col-xs-10 col-xs-offset-1">
 						<?php
-						include('content/fp-about-us.php');
-
-						echo '<header class="lead">'.$arrFPAboutUs['header'].'</header>';
+						<header class="lead"><?php echo $arrFPAboutUs['header'];?></header>
 						echo '<p>'.$arrFPAboutUs['body'].'</p>';
 						?>
 					</div>
@@ -35,9 +36,12 @@
 			</section>
 			<!-- //////////////////////////////////// WHY PAGE -->
 			<section id="third-page" class="section">
+				<?php
+				include('content/why-us.php');
+				?>
 				<div class="row">
 					<div class="col-sm-5 col-sm-offset-4 col-xs-8 col-xs-offset-2">
-						<header class="lead">Why use IncludeME:</header>
+						<header class="lead"><?php echo $arrFPWhytUs['header'];?></header>
 					</div>
 				</div>
 				<div class="row">

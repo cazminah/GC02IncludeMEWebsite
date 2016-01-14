@@ -6,7 +6,15 @@ $(document).ready(function() {
 		// sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C', '#000000'],
 		navigation: true,
 		navigationPosition: 'right',
-		navigationTooltips: ['What is Include Me', 'Why use Include Me', 'Tools', 'Testimonials']
+		navigationTooltips: ['What is Include Me', 'Why use Include Me', 'Tools', 'Testimonials'],
+    afterLoad: function(anchorLink, index){
+      if(index == 4){
+        $("#footer").fadeIn(500);
+      }
+      else{
+        $("#footer").fadeOut(60);
+      }
+    }
 		//css3: true
 	});
 
@@ -94,4 +102,3 @@ function fixSlickSlidersHeight(){
   //change the height of all elements to the slickSliderMaxHeight
   $(".slick-slide").css('height', slickSliderMaxHeight+'px');
 }
-
