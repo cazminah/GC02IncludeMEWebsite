@@ -1,5 +1,5 @@
 body {
-	background-image: url("../images/Mountains.jpg");
+	background-image: url("../images/SunnyMountain.jpg");
 	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -64,19 +64,20 @@ body {
 }
 
 #tab-yp {
-    background-color: rgba(246,146,30,95);
+    background-color: rgba(246,146,30,90);
 }
 
 #tab-clinician {
-    background-color: rgba(05,161,209,95);
+    background-color: rgba(05,161,209,90);
 }
 
 #tab-parents {
-	background-color: rgba(5,64,111,0.95);
+	background-color: rgba(5,64,111,0.90);
 }
 
 .tab {
     border: 1px solid #d4d4d1;
+    border-radius: 15px;
     float: left;
     margin-bottom: 20px;
     width: 100%;
@@ -91,15 +92,18 @@ body {
 
 #tab-1 {
     display: block;
-    background-color: rgba(246,146,30,0.95);
+    background-color: rgba(246,146,30,0.90);
+    border-radius: 15px;
 }
 
 #tab-2 {
-    background-color: rgba(05,161,209,0.95);
+    background-color: rgba(05,161,209,0.90);
+    border-radius: 15px;
 }
 
 #tab-3 {
-    background-color: rgba(5,64,111,0.95);
+    background-color: rgba(5,64,111,0.90);
+    border-radius: 15px;
 }
 
 

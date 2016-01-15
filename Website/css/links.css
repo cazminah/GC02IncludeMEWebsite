@@ -1,0 +1,36 @@
+body {
+	background-image: url("../images/StoneWall.jpg");
+	background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+* {
+    font-family: Calibri;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+/* ///////////////////////////////   */
+#title h1 {
+    font-family: Calibri;
+    font-weight: bold;
+    margin-top: 50px;
+    font-size: 42px;
+    color: #000;
+    text-align: center;
+}
+
+#links-list {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 110px;
+    font-family: Calibri;
+    list-style: none;
+    color: #fff;
+    background-color: rgba(246,146,30,0.9);
+    border-radius: 15px;
+}

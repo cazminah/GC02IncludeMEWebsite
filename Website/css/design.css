@@ -16,7 +16,7 @@
 
 /*///////////////////////////// testimonials override ////////////////////// */
 .cd-testimonials-wrapper{
-	background-color: rgba(102,87,172,0.95);
+	background-color: rgba(102,87,172,0.9);
 }
 
 
@@ -233,11 +233,11 @@ li {
 }
 
 #second-header {
-   border: 15px solid rgba(5,161,209,0.95);
+   border: 15px solid rgba(5,161,209,0.9);
    -webkit-background-clip: padding-box; /* for Safari */
    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
     border-radius: 15px;
-    background-color: rgba(5,161,209,0.95);
+    background-color: rgba(5,161,209,0.9);
 
     color: #ffffff;
 
@@ -248,11 +248,11 @@ li {
 
 #second-text {    
 /*  border: 40px solid rgb(246,146,30); */
-   border: 30px solid rgba(5,161,209,0.95);
+   border: 30px solid rgba(5,161,209,0.9);
    -webkit-background-clip: padding-box; /* for Safari */
    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
     border-radius: 15px;
-    background-color: rgba(5,161,209,0.95);
+    background-color: rgba(5,161,209,0.9);
 
     color: #ffffff;
 
@@ -274,11 +274,11 @@ li {
 }
 
 #third-header {
-   border: 15px solid rgba(246,146,30,0.95);
+   border: 15px solid rgba(246,146,30,0.9);
    -webkit-background-clip: padding-box; /* for Safari */
    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
     border-radius: 15px;
-    background-color: rgba(246,146,30,0.95);
+    background-color: rgba(246,146,30,0.9);
 
     color: #ffffff;
 
@@ -288,11 +288,11 @@ li {
 }
 
 #third-text {    
-   border: 30px solid rgba(246,146,30,0.95);
+   border: 30px solid rgba(246,146,30,0.9);
    -webkit-background-clip: padding-box; /* for Safari */
    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
     border-radius: 15px;
-    background-color: rgba(246,146,30,0.95);
+    background-color: rgba(246,146,30,0.9);
 
     color: #ffffff;
 
@@ -331,11 +331,11 @@ li {
 }
 
 #fourth-header {
-   border: 15px solid rgba(5,64,111,0.95);
+   border: 15px solid rgba(5,64,111,0.9);
    -webkit-background-clip: padding-box; /* for Safari */
    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
     border-radius: 15px;
-    background-color: rgba(5,64,111,0.95);
+    background-color: rgba(5,64,111,0.9);
 
     color: #ffffff;
 
@@ -346,11 +346,11 @@ li {
 
 #fourth-text {    
 /*  border: 40px solid rgb(246,146,30); */
-   border: 30px solid rgba(5,64,111,0.95);
+   border: 30px solid rgba(5,64,111,0.9);
    -webkit-background-clip: padding-box; /* for Safari */
    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
     border-radius: 15px;
-    background-color: rgba(5,64,111,0.95);
+    background-color: rgba(5,64,111,0.9);
 
     color: #ffffff;
     font-size: 16px;
