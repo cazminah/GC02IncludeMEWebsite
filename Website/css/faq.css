@@ -1,7 +1,14 @@
+body {
+	background-image: url("../images/Mountains.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 * {
     font-family: Calibri;
     font-size: 18px;
+    color: #fff;
 }
 
 #tabs-container {
@@ -15,7 +22,7 @@
     font-weight: bold;
     margin-top: 50px;
     font-size: 42px;
-    color: #05a1d1;
+    color: #000;
     text-align: center;
 }
 
@@ -57,16 +64,19 @@
 }
 
 #tab-yp {
-    background-color: rgba(246,146,30,90);
+    background-color: rgba(246,146,30,95);
 }
 
 #tab-clinician {
-    background-color: rgba(05,161,209,90);
+    background-color: rgba(05,161,209,95);
+}
+
+#tab-parents {
+	background-color: rgba(5,64,111,0.95);
 }
 
 .tab {
     border: 1px solid #d4d4d1;
-    background-color: #fff;
     float: left;
     margin-bottom: 20px;
     width: 100%;
@@ -81,11 +91,15 @@
 
 #tab-1 {
     display: block;
-    background-color: rgba(246,146,30,90);
+    background-color: rgba(246,146,30,0.95);
 }
 
 #tab-2 {
-    background-color: rgba(05,161,209,90);
+    background-color: rgba(05,161,209,0.95);
+}
+
+#tab-3 {
+    background-color: rgba(5,64,111,0.95);
 }
 
 
@@ -94,7 +108,7 @@
     margin-top: 10px;
     font-family: Calibri;
     list-style: none;
-    color: #000;
+    color: #fff;
     list-style-image: url(../images/1.gif);
 }
 .faqList li li{
@@ -107,13 +121,11 @@
 .faqDiv {
     display: none;
     margin-bottom: 10px;
-    background-color: #F0D6B9;
     padding: 10px;
 }
 .faqSubDiv{
     display: none;
     margin-bottom: 10px;
-    background-color: #85a1d1;
     padding: 10px;
 }
 .clinicianSubLists li {
