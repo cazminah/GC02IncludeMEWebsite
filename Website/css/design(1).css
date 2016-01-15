@@ -16,7 +16,7 @@
 
 /*///////////////////////////// testimonials override ////////////////////// */
 .cd-testimonials-wrapper{
-	background-color: orange;
+	background-color: rgba(102,87,172,0.9);
 }
 
 
@@ -130,7 +130,6 @@
 	left: -35px;
 }
 .slick-slider{
-	background-color: #05a1d1;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	padding-left: 5px;
@@ -138,8 +137,7 @@
 }
 .slick-slide
 {
-	color: black;
-    background-color: white;
+	text-align: center;
     margin-right: 5px;
   /*  margin-left: 5px;*/
     padding-bottom: 10px;
@@ -196,11 +194,15 @@ div#myNavbar.navbar-collapse.collapse {
     font-weight: bold;
 }
 
-.list {
+#list {
     font-size: 18px;
 }
 
 p {
+    font-size: 18px;
+}
+
+li {
     font-size: 18px;
 }
 
@@ -209,11 +211,15 @@ p {
    		font-size: 28px;
    }
 
-   .list {
+   #list {
         font-size: 14px;
    }
 
    p {
+       font-size: 14px;
+   }
+
+   li {
        font-size: 14px;
    }
 }
@@ -227,11 +233,11 @@ p {
 }
 
 #second-header {
-   border: 15px solid rgba(5,161,209,0.9);
+   border: 15px solid rgba(246,146,30,0.9);
    -webkit-background-clip: padding-box; /* for Safari */
    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
     border-radius: 15px;
-    background-color: rgba(5,161,209,0.9);
+    background-color: rgba(246,146,30,0.9);
 
     color: #ffffff;
 
@@ -242,11 +248,11 @@ p {
 
 #second-text {    
 /*  border: 40px solid rgb(246,146,30); */
-   border: 30px solid rgba(5,161,209,0.9);
+   border: 30px solid rgba(246,146,30,0.9);
    -webkit-background-clip: padding-box; /* for Safari */
    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
     border-radius: 15px;
-    background-color: rgba(5,161,209,0.9);
+    background-color: rgba(246,146,30,0.9);
 
     color: #ffffff;
 
@@ -268,11 +274,11 @@ p {
 }
 
 #third-header {
-   border: 15px solid rgba(246,146,30,0.9);
+   border: 15px solid rgba(5,161,209,0.9);
    -webkit-background-clip: padding-box; /* for Safari */
    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
     border-radius: 15px;
-    background-color: rgba(246,146,30,0.9);
+    background-color: rgba(5,161,209,0.9);
 
     color: #ffffff;
 
@@ -282,37 +288,36 @@ p {
 }
 
 #third-text {    
-/*  border: 40px solid rgb(246,146,30); */
-	border: 30px solid rgba(246,146,30,0.9);
-    -webkit-background-clip: padding-box; /* for Safari */
-    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+   border: 30px solid rgba(5,161,209,0.9);
+   -webkit-background-clip: padding-box; /* for Safari */
+   background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
     border-radius: 15px;
-    background-color: rgba(246,146,30,0.9);
+    background-color: rgba(5,161,209,0.9);
 
     color: #ffffff;
+
+   	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+   -moz-column-count: 2; /* Firefox */
+   column-count: 2;
+   -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+   -moz-column-gap: 40px; /* Firefox */
+   column-gap: 40px;
 }
 
-#third-page h1 {
-	color: white;
-}
-h2{
-	text-align: center;
+#third-subheading {
 	font-size: 30px;
-	color: white;
 }
 
 #third-page #ul-blue{
 	text-align: left;
 	list-style-image:  url("../images/bullet_blue2.png");
+	font-size: 18px;
 }
 
 #third-page #ul-orange{
 	text-align: left;
 	list-style-image:  url("../images/bullet_orange2.png");
-}
-
-#center-lists{
-	padding-left: 50px;
+	font-size: 18px;
 }
 
 #third-page ul li {
@@ -320,17 +325,45 @@ h2{
 	text-decoration: none;
 	color: white;
 }
+
 #fourth-page{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-image: url("../images/section2Balloons.jpg");
+	background-image: url("../images/ChocTools.jpg");
 }
+
+#fourth-header {
+   border: 15px solid rgba(5,64,111,0.9);
+   -webkit-background-clip: padding-box; /* for Safari */
+   background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    border-radius: 15px;
+    background-color: rgba(5,64,111,0.9);
+
+    color: #ffffff;
+
+    font-weight: bold;
+    font-size: 42px;
+    text-align: center;
+}
+
+#fourth-text {    
+/*  border: 40px solid rgb(246,146,30); */
+   border: 30px solid rgba(5,64,111,0.9);
+   -webkit-background-clip: padding-box; /* for Safari */
+   background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    border-radius: 15px;
+    background-color: rgba(5,64,111,0.9);
+
+    color: #ffffff;
+    font-size: 14px;
+}
+
 #fifth-page{
-/*	background-position: center;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-image: url("../images/section2Balloons.jpg");*/
+	background-image: url("../images/Kittens.jpg");*/
 }
 #second-page {
 	color: black;
@@ -354,7 +387,7 @@ h2{
 		text-align: center;
 	}
 	#footer{
-		bottom:35px;
+		bottom:37px;
 	}
 /* //////////////////// end of full page jquery /////////////////////////// */
 	.container{
@@ -363,22 +396,6 @@ h2{
 	#fifth-page ul {
 		list-style: none;
 	}
-
-.tools-padding{
-	margin-left: 8.333333%;
-	margin-right: 8.333333%;
-}
-#second-page {
-	font-family: serif;
-}
-
-#fourth-page h3 {
-	text-align: center;
-}
-#fourth-page .tool-text{
-	text-align: center;
-	margin: 5px;
-}
 
 /* ////////////////////////// menue hover text //////////////////////// */
 .Zebra_Tooltip .Zebra_Tooltip_Message {
@@ -390,16 +407,16 @@ h2{
 .footer{
 	background-color: #FFF;
 	padding-top: 20px;
-	padding-bottom: 0px;
+	padding-bottom: 50px;
 }
 #silvercloudlogo{
-	width: 30%;
-	height: 30%;
+	width: 40%;
+	height: 40%;
 	padding-top: 40px;
 }
 #EBPULogo{
-	width: 20%;
-	height: 20%;
+	width: 40%;
+	height: 40%;
 	float: right;
 }
 /* ////////////////////////// Element Styling //////////////////////// */
@@ -437,25 +454,6 @@ hr{
 
 #hr-what{
 	background-color: #f6921e;
-}
-
-
-#tools-container{
-	background-color: #FFF;
-	opacity: 0.9;
-	border-radius: 50px;
-	padding: 10px;
-}
-#lead-tools{
-	color: #05a1d1;
-	text-align: center;
-}
-#hr-tools{
-	background-color: #05a1d1;
-}
-p{
-	font-family: Calibri;
-	font-size: 15px;
 }
 
 

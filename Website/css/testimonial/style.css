@@ -135,7 +135,6 @@ Main components
 .cd-author .cd-author-info li:last-child {
   font-size: 12px;
   font-size: 0.75rem;
-  color: #6b6b70;
 }
 @media only screen and (min-width: 768px) {
   .cd-author img {
